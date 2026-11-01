@@ -1,0 +1,38 @@
+# ==============================================================================
+# PROOFX: ReguLens AICTE — Standard Production Git Ignore
+# ==============================================================================
+
+# Node / Dependencies
+node_modules/
+frontend/node_modules/
+package-lock.json
+
+# Build Outputs (Compiled during deployment via build.sh)
+dist/
+frontend/dist/
+
+# Python & Virtual Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Generated Scrutiny PDF Reports (Ephemeral)
+backend/app/reports_generated/*.pdf
+!backend/app/reports_generated/.gitkeep
+backend/tests/test_output/
+
+# IDE & Operating System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.local
+.env.*.local
